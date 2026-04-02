@@ -6,7 +6,7 @@ NewCreation's roadmap focuses on a fast realization of the homily viewer by sett
 
 ## Phases
 
-- [ ] **Phase 1: Foundation & Deployability** - Turborepo skeleton, Docker setup, and GitHub Actions CI/CD to VPS.
+- [x] **Phase 1: Foundation & Deployability** - Turborepo skeleton, Docker setup, and GitHub Actions CI/CD to VPS. (completed 2026-04-02)
 - [ ] **Phase 2: Database & Server Sync** - NestJS API with Prisma ORM and the resilient MD-to-Postgres Upsert Script.
 - [ ] **Phase 3: Frontend Interface & Delivery** - Next.js dashboard, search, and Markdown rendering.
 
@@ -33,7 +33,7 @@ Plans:
 **Requirements**: [BACK-01, BACK-02, BACK-03, BACK-04, BACK-05]
 **Success Criteria** (what must be TRUE):
   1. Prisma correctly initializes a standalone logical schema inside the shared PostgreSQL database.
-  2. `sync-transcriptions.ts` successfully reads `Data - Title - Year` paths and populates the DB via Upsert.
+  2. `sync-transcriptions.ts` successfully reads `Date - Title - Year` paths and populates the DB via Upsert.
   3. The NestJS API exposes robust endpoints serving homily arrays and formatted strings.
 **Plans**: TBD
 
@@ -64,6 +64,6 @@ Phases execute in numeric order: 1 → 2 → 3
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Deployability | 0/3 | Not started | - |
+| 1. Foundation & Deployability | 0/3 | Complete    | 2026-04-02 |
 | 2. Database & Server Sync | 0/3 | Not started | - |
 | 3. Frontend Interface & Delivery | 0/3 | Not started | - |

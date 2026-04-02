@@ -17,7 +17,7 @@
 
 - [ ] **BACK-01**: PostgreSQL schema is created and managed via Prisma ORM for the NewCreation architecture.
 - [ ] **BACK-02**: NestJS REST API serves homily metadata (title, date, liturgical year) and parsed Markdown content.
-- [ ] **BACK-03**: An automated synchronization script (`sync-transcriptions.ts`) reads local `.md` files from the `homilias` directory and extracts filename metadata (`Date - Title - Year`).
+- [ ] **BACK-03**: An automated synchronization script (`sync-transcriptions.ts`) reads local `.md` files from the `homilies` directory and extracts filename metadata (`Date published - Title - Year - Bible passage`).
 - [ ] **BACK-04**: Synchronization script utilizes database `upsert` mechanism without disrupting existing records.
 - [ ] **BACK-05**: Script logs warnings rather than aborting when detecting format mismatches in filenames.
 
