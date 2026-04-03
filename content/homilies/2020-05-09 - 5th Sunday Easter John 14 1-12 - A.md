@@ -1,0 +1,220 @@
+# READINGS
+
+1. John 14:1-12
+# HOMILY
+
+In this Gospel, we get some sense of the hugeness of Jesus’ mind. 
+
+At the beginning of the series when we were in Palm Sunday, I told you how important it was I think that we understand that what Jesus was doing, he was doing deliberately. 
+
+That’s why he set up the trip into Jerusalem on the donkey so that he was enacting the Davidic prophecies. 
+
+But here in today’s Gospel, we get something of the sort of mind that is capable of imagining doing such a project. 
+
+```
+Do not let your hearts be troubled.
+
+Believe in God, believe also in me. 
+
+In my Father’s house, there are many dwelling places.
+
+If it were not so, would I have told you that I go to prepare a place for you?
+```
+
+In other words, this is very similar to the passage in Hebrews where it says: 
+
+```
+For the joy that was set before him, he endured the cross, he despised the shame and seated at the right hand of God.
+```
+
+In other words, what did he try to consider in understanding that what he was opening up was going to be so much for so many that it was worth it – death for him was not a defining parameter as it is for us. 
+
+Of course, it’s completely baffling for the first disciples in this passage, told before the Passion, which we read in Easter season. 
+
+So after the passion, after the resurrection, we begin to get a sense of Jesus having fulfilled what he promised.
+
+```
+And if I go and prepare a place for you, I will come again and will take you to myself, so that where I am, there you may be also. 
+
+And you know the way to the place where I am going.
+```
+
+This is before Jesus’s passion so good-old-straightforward-common-sense Thomas says to him: 
+
+```
+Lord, we do not know where you are going. 
+
+How can we know the way?
+```
+
+Jesus said to him:
+
+```
+I am the way, and the truth, and the life.
+
+No one comes to the Father except through me. 
+
+If you know me, you will know my Father also.
+
+From now on, you do know him and have seen him.
+```
+
+In other words, Thomas was wanting a straightforward answer and instead, he got a mystical discourse. 
+
+Except that, it’s not that mystical. 
+
+He’s about to be the root to his self giving up to death. 
+
+That is going to show what the truth is, where the presence of God is to be found in this world – the presence of God as he found in the One who offers himself into the place of the seditious blasphemer, thereby exploding all notions of power by civil authority and by religious goodness, by legal or priestly authority. 
+
+He, the king of the universe, is going to occupy the space of apparent criminality and sedition, blasphemy. 
+
+And those who perceive this, they’re the ones who will know the truth.
+
+In our passage from St Peter today, we get St Peter preaching literally exactly straightforward this. 
+
+For some, he was rejected; for others, he’s honourably prized. 
+
+In the translations, it was precious; precious tends to mean ‘eh’, it’s not very helpful, but ‘honourably priced’… What appeared to be seditious…, wasn’t; it was the real presence of God himself, who is worth more than anything. 
+
+Not the one who was condemned, rejected, and crossed aside. 
+
+So the way had to endure, the truth, what God actually looks like, and the life. 
+
+Now that Jesus has done that, enabling us to live as if death were not. 
+
+No longer run by scandal, stumbling over having to create new scapegoats in order to survive, which is very much what St Peter talks about it in the epistle.
+
+He talks he was carrying on doing the same old thing just stumbling round destined to fail. 
+
+That’s the world of fatality. We see it now. 
+
+We all know the difference between people who are stuck in a stumbling block mould, because what do they do if they look for someone to blame? 
+
+In case of doubt, find someone to blame. 
+
+Whereas the extraordinary thing about the scientific understanding of truth is: I wonder what’s going on here? 
+
+I wonder what biases of mine I need to remove in order to be able to work out what is actually going on here so that then we can work out how to live with, deal with, cope with – whatever, we’re learning about. 
+
+Who to blame? For close down world fatality. What’s going on? 
+
+How do we work out what it is, how do we work out without being frightened to death how to live in the midst of this? 
+
+We see a good deal of both of those attitudes going on in our response to the current Covid virus. 
+
+Phillip, the Greek, says to him: 
+
+```
+Lord, show us the Father, and we will be satisfied.
+```
+
+The more mystical; the Greek-cultured disciple: Show us the Father! 
+
+And Jesus again brings him straight down to earth in a very straightforward way: 
+
+```
+Have I been with you all this time, Philip, and you still do not know me? 
+
+Whoever has seen me has seen the Father.
+
+How can you say, ‘Show us the Father’?” 
+```
+
+In other words, Philip is talking as the Father is someone else, someone outside, that there is a big God out there who is somehow independent from Jesus. 
+
+Jesus says no: 
+
+```
+No longer will be God out there. 
+
+The only access to the Father is through me. 
+```
+
+In other words: 
+
+As you: 
+
+- learn to give yourselves into the midst of death, 
+- give ourselves away for others – “do what I do” –, as you are able to stand up for the truth in the midst of all the turbulence of life and not be run by it, not be frightened by it; 
+- as you’re able to become aware that you are receiving life already in the midst of all this, 
+
+In this degree you’ve known the Father already. 
+
+It is me. The only access you have to the Father is me.
+
+There is no other extra out there.
+
+If there were, we would be what is called a bitheistic religion, duo-theistic religion instead of a monotheistic one. 
+
+The wholeness of the Father is revealed in Jesus. There’s no extra. 
+
+And Jesus is pointing this out: don’t get distracted, it’s all at this level, it’s by allowing ourselves to be turned into a new brotherhood, siblinghood of equals that you’re going to discover what it is to share the Father. 
+
+In other words, it is by becoming me that you’re going to discover the Father. 
+
+Only after Jesus’s death that he then refers to ‘your Father and my Father’. 
+
+Jesus is into something really very striking. 
+
+Just in case we haven’t understood the full depth of the apparent shocking thing that he said: 
+
+*No outside God; The only God the Father you will ever ever discover, you will discover by becoming sister and brother with me.*
+
+```
+The words that I say to you I do not speak on my own; but the Father who dwells in me does his works.
+```
+
+The Father is already working through me.
+
+I’m the actual physical manifestation of the Father that is here. 
+
+```
+Believe me that I am in the Father and the Father is in me.
+```
+
+I am who is talking, a human being.
+
+```
+But if you do not, then believe me because of the works.
+```
+
+He’s referring to the various signs which he had done, all in which tended to open up creation. 
+
+No demigod can open up creation. 
+
+The only one who can open up creation is the Creator. 
+
+What Jesus is saying is: 
+
+The Creator that’s me is the Father, who is within me doing these things.
+
+Believe the works. 
+
+If it’s awful difficult to understand that what I’m doing is the work of creation, finishing up and opening up the creation and that you can all participate in something much much bigger than we’ve all been trapped in so far.
+
+Look at the works themselves. 
+
+Who could possibly do this if it were not the creator of all things? 
+
+```
+Very truly, I tell you, the one who believes in me will also do the works that I do and, in fact, will do greater works than these, because I am going to the Father.
+```
+
+And I think this is one of the most wonderful things. 
+
+It shows that Jesus is doing exactly what he is saying: 
+
+Yes I’m going to occupy that space of death to detoxify, to remove its shame, to make it possible no longer for you to be run by fear of it.
+
+And because I am going to do that, it will become possible for you to do greater and more extraordinary, more wonderful things than I. 
+
+I have opened up the space, and you’ll be occupying it. 
+
+And because you are occupying it, you’ll be able to run with it and make new things, open up new ways that will be far greater than what I have actually done.
+
+In other words, Jesus knows perfectly well this is not talking about him, this is about him losing himself so as to become us.
+
+And in doing so opening up the possibility for us to become something so much more than we could imagine. 
+
+So I ask you to share this joy – the joy of the discovery of the risen Lord in the Easter season coming back to us, and just reminding us what he has been opening up for us, and how much freedom we have to move forward in new and interesting ways, now that we’re longing to stumble through repetitive scapegoating, sacrificing, blaming, etc etc.

@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  web:
+    # Use image directives locally so docker-compose uses build tags if images don't exist
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+      target: runner
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - NEXT_PUBLIC_API_URL=http://localhost:3001
+    volumes:
+      - ./apps/web:/app/apps/web
+      - /app/apps/web/node_modules
+    labels:
+      - "traefik.enable=false"
+
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+      target: runner
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=development
+      - DATABASE_URL=${DATABASE_URL}
+    volumes:
+      - ./apps/api:/app/apps/api
+      - /app/apps/api/node_modules
+    labels:
+      - "traefik.enable=false"
+
+networks:
+  gateway_network:
+    external: false
+    driver: bridge
+

@@ -1,0 +1,25 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Homily {
+  id             String   @id @default(uuid())
+  title          String
+  datePublished  DateTime
+  liturgicalYear String?
+  liturgicalSeason String?
+  biblePassage   String?
+  content        String   @db.Text
+  slug           String   @unique
+  originalFile   String   @unique
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@index([title])
+  @@index([datePublished])
+}

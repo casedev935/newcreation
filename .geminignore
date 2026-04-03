@@ -1,0 +1,10 @@
+# AI constraints
+node_modules/
+dist/
+.next/
+postgres-data/
+.git/
+.planning/
+.agent/
+!*.example
+content

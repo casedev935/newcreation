@@ -28,6 +28,7 @@ Providing an accessible, high-performance, and read-only repository of spiritual
 - [ ] **CI/CD Pipeline**: GitHub Actions for automated build, push, and deploy to VPS via SSH.
 - [ ] **Reverse Proxy Integration**: Deployment behind the existing Traefik proxy on the `gateway_network`.
 - [ ] **Language Integrity**: All UI and content (transcriptions) maintained in English.
+- [ ] **Design System**: Implement a "Neo-brutalist" style for the frontend user interface.
 
 ### Out of Scope
 
@@ -46,7 +47,7 @@ Providing an accessible, high-performance, and read-only repository of spiritual
 
 - **Tech Stack**: NestJS (API), Next.js (SSR, Standalone), Prisma (ORM), PostgreSQL (DB), Turborepo (Orchestration).
 - **Architecture**: Microservices in a Monorepo.
-- **Docker**: Images must be optimized (node:20-slim) to keep footprints under 100MB.
+- **Docker**: Images must be optimized (node:20-slim) to keep footprints under 100MB (preferably). 
 - **Infrastructure**: Must coexist with existing Traefik proxy on `gateway_network`.
 - **Database**: Must handle schema creation in a shared Postgres instance without disrupting other projects.
 - **Development**: Docker-based environment with hot-reloading via volumes and `pnpm dev`.

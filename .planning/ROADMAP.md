@@ -7,7 +7,7 @@ NewCreation's roadmap focuses on a fast realization of the homily viewer by sett
 ## Phases
 
 - [x] **Phase 1: Foundation & Deployability** - Turborepo skeleton, Docker setup, and GitHub Actions CI/CD to VPS. (completed 2026-04-02)
-- [ ] **Phase 2: Database & Server Sync** - NestJS API with Prisma ORM and the resilient MD-to-Postgres Upsert Script.
+- [x] **Phase 2: Database & Server Sync** - NestJS API with Prisma ORM and the resilient MD-to-Postgres Upsert Script. (completed 2026-04-03)
 - [ ] **Phase 3: Frontend Interface & Delivery** - Next.js dashboard, search, and Markdown rendering.
 
 ## Phase Details
@@ -65,5 +65,5 @@ Phases execute in numeric order: 1 → 2 → 3
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Deployability | 0/3 | Complete    | 2026-04-02 |
-| 2. Database & Server Sync | 0/3 | Not started | - |
+| 2. Database & Server Sync | 0/3 | Complete    | 2026-04-03 |
 | 3. Frontend Interface & Delivery | 0/3 | Not started | - |

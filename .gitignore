@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.next/
+postgres-data/
+.env
+.env.*
+!.env.example
+.turbo/
+
+# OS Files
+.DS_Store
+Thumbs.db
