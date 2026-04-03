@@ -31,10 +31,15 @@ WORKDIR /app
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nestjs
 USER nestjs
-COPY --from=installer /app/apps/api/package.json .
-COPY --from=installer /app/apps/api/dist ./dist
-# If api needs prisma, handle copying prisma schemas or node_modules here depending on structure.
+
+# Copy root node_modules for symlinks
 COPY --from=installer /app/node_modules ./node_modules
+# Copy workspace-specific files to the correct path
+COPY --from=installer /app/apps/api/package.json ./apps/api/package.json
+COPY --from=installer /app/apps/api/dist ./apps/api/dist
+
+# Set correct working directory for the app
+WORKDIR /app/apps/api
 # Expose port
 ENV PORT=3001
 EXPOSE 3001
