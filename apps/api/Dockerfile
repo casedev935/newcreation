@@ -17,13 +17,13 @@ COPY --from=builder /app/out/json/ .
 COPY --from=builder /app/out/pnpm-lock.yaml ./pnpm-lock.yaml
 RUN pnpm install
 
-# Generate Prisma Client
-COPY --from=builder /app/apps/api/prisma ./apps/api/prisma
-RUN pnpm prisma generate --schema=apps/api/prisma/schema.prisma
-
 # Build the project and its dependencies
 COPY --from=builder /app/out/full/ .
 COPY turbo.json turbo.json
+
+# Generate Prisma Client (must be after full source copy)
+RUN pnpm --filter api prisma generate
+
 RUN pnpm turbo run build --filter=api...
 
 FROM base AS runner
