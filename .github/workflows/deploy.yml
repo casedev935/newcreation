@@ -87,9 +87,9 @@ jobs:
             cd /opt/newcreation
             
             # Create .env file for docker-compose
-            echo "GITHUB_REPOSITORY=$GITHUB_REPOSITORY" > .env
-            echo "DATABASE_URL=$DATABASE_URL" >> .env
-            echo "VPS_IP=$VPS_IP" >> .env
+            echo "GITHUB_REPOSITORY=\"$GITHUB_REPOSITORY\"" > .env
+            echo "DATABASE_URL=\"$DATABASE_URL\"" >> .env
+            echo "VPS_IP=\"$VPS_IP\"" >> .env
             
             # Log in and pull new images
             echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
@@ -101,5 +101,5 @@ jobs:
             # Wait for container to be ready
             sleep 10
             
-            # Run database migrations
-            docker exec newcreation-api npx prisma migrate deploy
+            # Run database migrations or show logs on failure
+            docker exec newcreation-api npx prisma migrate deploy || (docker logs newcreation-api --tail 50 && exit 1)
