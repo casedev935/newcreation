@@ -22,7 +22,7 @@ COPY --from=builder /app/out/full/ .
 COPY turbo.json turbo.json
 
 # Generate Prisma Client (must be after full source copy)
-RUN pnpm --filter api prisma generate
+RUN cd apps/api && pnpm exec prisma generate
 
 RUN pnpm turbo run build --filter=api...
 
