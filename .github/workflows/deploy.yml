@@ -86,10 +86,15 @@ jobs:
           script: |
             cd /opt/newcreation
             
-            # Create .env file for docker-compose
-            echo "GITHUB_REPOSITORY=\"$GITHUB_REPOSITORY\"" > .env
-            echo "DATABASE_URL=\"$DATABASE_URL\"" >> .env
-            echo "VPS_IP=\"$VPS_IP\"" >> .env
+            # Ensure the database is on the same network
+            docker network connect gateway_network bookshelf-postgres || true
+            
+            # Create .env file for docker-compose (Expanded by shell)
+            cat <<EOF > .env
+            GITHUB_REPOSITORY="${GITHUB_REPOSITORY}"
+            DATABASE_URL="${DATABASE_URL}"
+            VPS_IP="${VPS_IP}"
+            EOF
             
             # Log in and pull new images
             echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
