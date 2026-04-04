@@ -9,6 +9,7 @@ services:
       - gateway_network
     environment:
       - NODE_ENV=production
+      - API_URL=http://newcreation-api:3001
       - NEXT_PUBLIC_API_URL=https://api.newcreation.mediamanager.tech
     labels:
       - "traefik.enable=true"

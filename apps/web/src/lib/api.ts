@@ -1,7 +1,8 @@
 import axios from 'axios';
 
-// The Backend API URL running from apps/api
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001';
+// The Backend API URL
+// Use internal network when on server, and public URL when on client
+const API_URL = (typeof window === 'undefined' ? process.env.API_URL : process.env.NEXT_PUBLIC_API_URL) || 'http://localhost:3001';
 
 export const api = axios.create({
   baseURL: API_URL,
