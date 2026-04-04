@@ -109,3 +109,6 @@ jobs:
             
             # Run database migrations or show logs on failure
             docker exec newcreation-api npx prisma migrate deploy || (docker logs newcreation-api --tail 50 && exit 1)
+            
+            # Sync homilies from content directory
+            docker exec newcreation-api npm run sync:prod

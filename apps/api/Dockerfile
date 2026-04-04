@@ -45,6 +45,9 @@ COPY --from=installer --chown=nestjs:nodejs /app/apps/api/package.json ./apps/ap
 COPY --from=installer --chown=nestjs:nodejs /app/apps/api/prisma ./apps/api/prisma
 COPY --from=installer --chown=nestjs:nodejs /app/package.json ./package.json
 
+# Copy content for synchronization
+COPY --from=builder --chown=nestjs:nodejs /app/content ./content
+
 USER nestjs
 WORKDIR /app/apps/api
 
