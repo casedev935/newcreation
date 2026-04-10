@@ -88,10 +88,10 @@ jobs:
             cd /opt/newcreation
             
             # Ensure the database is on the same network
-            docker network connect gateway_network bookshelf-postgres || true
+            docker network connect gateway_network postgres || true
             
             # Build DATABASE_URL from individual secrets
-            DATABASE_URL="postgresql://${DB_USER}:${DB_PASSWORD}@bookshelf-postgres:5432/${DB_NAME}?schema=public"
+            DATABASE_URL="postgresql://${DB_USER}:${DB_PASSWORD}@postgres:5432/${DB_NAME}?schema=public"
             
             # Create .env file for docker-compose
             echo "GITHUB_REPOSITORY=${GITHUB_REPOSITORY}" > .env
