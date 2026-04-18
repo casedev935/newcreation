@@ -43,21 +43,32 @@ export default async function HomilyPage({ params }: { params: { slug: string } 
                   "inline-block text-white font-black uppercase tracking-widest px-4 py-1 border-2 border-black transform -rotate-1 shadow-brutal-sm",
                   getPassageColor(homily.biblePassage)
                 )}>
-                      Watch on YouTube
-                    </a>
-                  )}
-                </div>
-                <h1 className="text-5xl md:text-7xl font-display font-black leading-tight mb-6">
-                  {homily.biblePassage 
-                    ? homily.title.replace(new RegExp(`\\s*${homily.biblePassage.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')}\\s*`, 'gi'), '').trim()
-                    : homily.title}
-                </h1>
-               {homily.datePublished && (
-                 <time className="text-lg font-bold text-muted-foreground uppercase tracking-widest">
-                   {format(new Date(homily.datePublished), "MMMM do, yyyy")}
-                 </time>
-               )}
-            </header>
+                  {homily.biblePassage}
+                </span>
+              )}
+              {homily.videoLink && (
+                <a
+                  href={homily.videoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-white font-black uppercase tracking-widest px-4 py-1 border-2 border-black transform rotate-1 shadow-brutal-sm bg-[#FF0000] hover:scale-105 transition-transform"
+                >
+                  <Youtube size={18} fill="currentColor" />
+                  Watch on YouTube
+                </a>
+              )}
+            </div>
+            <h1 className="text-5xl md:text-7xl font-display font-black leading-tight mb-6">
+              {homily.biblePassage 
+                ? homily.title.replace(new RegExp(`\\s*${homily.biblePassage.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')}\\s*`, 'gi'), '').trim()
+                : homily.title}
+            </h1>
+            {homily.datePublished && (
+              <time className="text-lg font-bold text-muted-foreground uppercase tracking-widest">
+                {format(new Date(homily.datePublished), "MMMM do, yyyy")}
+              </time>
+            )}
+        </header>
 
         <section className="prose prose-lg max-w-none prose-headings:font-display prose-headings:font-black prose-p:font-medium">
           <ReactMarkdown 
