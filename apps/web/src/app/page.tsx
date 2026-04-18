@@ -4,6 +4,7 @@ import { Card, CardHeader, CardTitle } from "@/components/ui/card"
 import { cn, getYearColor, getSeasonColor, getPassageColor } from "@/lib/utils"
 import { format } from "date-fns"
 import Link from "next/link"
+import { Youtube } from "lucide-react"
 
 export const dynamic = 'force-dynamic';
 
@@ -71,6 +72,19 @@ export default async function Home({
                         )}>
                           {homily.biblePassage}
                         </span>
+                      )}
+                      {homily.videoLink && (
+                        <a
+                          href={homily.videoLink}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="bg-[#FF0000] text-white px-3 py-1 font-black text-xs uppercase tracking-widest border-2 border-black flex items-center gap-1.5 hover:scale-105 transition-transform"
+                          title="Watch on YouTube"
+                        >
+                          <Youtube size={14} fill="currentColor" />
+                          Video
+                        </a>
                       )}
                     </div>
                     <span className="font-bold text-sm uppercase tracking-tight text-muted-foreground">

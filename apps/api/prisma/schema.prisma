@@ -17,6 +17,7 @@ model Homily {
   content        String   @db.Text
   slug           String   @unique
   originalFile   String   @unique
+  videoLink      String?
   createdAt      DateTime @default(now())
   updatedAt      DateTime @updatedAt
 

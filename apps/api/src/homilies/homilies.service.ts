@@ -30,6 +30,7 @@ export class HomiliesService {
           liturgicalSeason: true,
           biblePassage: true,
           slug: true,
+          videoLink: true,
           createdAt: true,
         }, // Omitting content to keep list payload light
       }),

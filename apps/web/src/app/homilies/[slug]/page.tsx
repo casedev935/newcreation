@@ -5,6 +5,7 @@ import { notFound } from "next/navigation"
 import { format } from "date-fns"
 import ReactMarkdown from "react-markdown"
 import remarkGfm from "remark-gfm"
+import { Youtube } from "lucide-react"
 
 export const dynamic = 'force-dynamic';
 
@@ -44,6 +45,17 @@ export default async function HomilyPage({ params }: { params: { slug: string } 
                 )}>
                   {homily.biblePassage}
                 </span>
+              )}
+              {homily.videoLink && (
+                <a
+                  href={homily.videoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-white font-black uppercase tracking-widest px-4 py-1 border-2 border-black transform rotate-1 shadow-brutal-sm bg-[#FF0000] hover:scale-105 transition-transform"
+                >
+                  <Youtube size={18} fill="currentColor" />
+                  Watch on YouTube
+                </a>
               )}
             </div>
             <h1 className="text-5xl md:text-7xl font-display font-black leading-tight mb-6">

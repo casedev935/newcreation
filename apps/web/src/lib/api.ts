@@ -27,6 +27,7 @@ export interface Homily {
   biblePassage?: string;
   slug: string;
   content?: string;
+  videoLink?: string;
 }
 
 export async function fetchHomilies(search: string = '', page: number = 1, year: string = ''): Promise<PaginatedResponse<Homily>> {
