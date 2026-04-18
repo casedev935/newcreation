@@ -87,9 +87,11 @@ export default async function Home({
                         </a>
                       )}
                     </div>
-                    <span className="font-bold text-sm uppercase tracking-tight text-muted-foreground">
-                      Published at {format(new Date(homily.datePublished), "MMM dd, yyyy")}
-                    </span>
+                    {homily.datePublished && (
+                      <span className="font-bold text-sm uppercase tracking-tight text-muted-foreground">
+                        Published at {format(new Date(homily.datePublished), "MMM dd, yyyy")}
+                      </span>
+                    )}
                   </div>
                   <CardTitle className="group-hover:text-primary transition-colors text-3xl font-display font-black leading-tight">
                     {homily.biblePassage 

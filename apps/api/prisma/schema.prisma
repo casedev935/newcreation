@@ -10,7 +10,7 @@ datasource db {
 model Homily {
   id             String   @id @default(uuid())
   title          String
-  datePublished  DateTime
+  datePublished  DateTime?
   liturgicalYear String?
   liturgicalSeason String?
   biblePassage   String?

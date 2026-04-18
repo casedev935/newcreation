@@ -21,7 +21,7 @@ export interface PaginatedResponse<T> {
 export interface Homily {
   id: string;
   title: string;
-  datePublished: string;
+  datePublished?: string;
   liturgicalYear?: string;
   liturgicalSeason?: string;
   biblePassage?: string;
