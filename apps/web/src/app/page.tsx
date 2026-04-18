@@ -46,61 +46,63 @@ export default async function Home({
           </div>
         ) : (
           homilies.map((homily) => (
-            <Link key={homily.id} href={`/homilies/${homily.slug}`} className="block group">
-              <Card className="hover:-translate-y-2 hover:-translate-x-2 transition-transform duration-200 group-hover:shadow-brutal-lg border-4">
-                <CardHeader>
-                  <div className="flex flex-wrap gap-2 justify-between items-start mb-4">
-                    <div className="flex flex-wrap gap-2">
-                      <span className={cn(
-                        "text-white px-3 py-1 font-black text-xs uppercase tracking-widest border-2 border-black",
-                        getYearColor(homily.liturgicalYear)
-                      )}>
-                        {homily.liturgicalYear || "GENERAL"}
-                      </span>
-                      {homily.liturgicalSeason && (
+            <div key={homily.id} className="relative group">
+              <Link href={`/homilies/${homily.slug}`} className="block">
+                <Card className="hover:-translate-y-2 hover:-translate-x-2 transition-transform duration-200 group-hover:shadow-brutal-lg border-4">
+                  <CardHeader>
+                    <div className="flex flex-wrap gap-2 justify-between items-start mb-4">
+                      <div className="flex flex-wrap gap-2">
                         <span className={cn(
                           "text-white px-3 py-1 font-black text-xs uppercase tracking-widest border-2 border-black",
-                          getSeasonColor(homily.liturgicalSeason)
+                          getYearColor(homily.liturgicalYear)
                         )}>
-                          {homily.liturgicalSeason}
+                          {homily.liturgicalYear || "GENERAL"}
                         </span>
-                      )}
-                      {homily.biblePassage && (
-                        <span className={cn(
-                          "text-white px-3 py-1 font-black text-xs uppercase tracking-widest border-2 border-black",
-                          getPassageColor(homily.biblePassage)
-                        )}>
-                          {homily.biblePassage}
+                        {homily.liturgicalSeason && (
+                          <span className={cn(
+                            "text-white px-3 py-1 font-black text-xs uppercase tracking-widest border-2 border-black",
+                            getSeasonColor(homily.liturgicalSeason)
+                          )}>
+                            {homily.liturgicalSeason}
+                          </span>
+                        )}
+                        {homily.biblePassage && (
+                          <span className={cn(
+                            "text-white px-3 py-1 font-black text-xs uppercase tracking-widest border-2 border-black",
+                            getPassageColor(homily.biblePassage)
+                          )}>
+                            {homily.biblePassage}
+                          </span>
+                        )}
+                      </div>
+                      {homily.datePublished && (
+                        <span className="font-bold text-sm uppercase tracking-tight text-muted-foreground">
+                          Published at {format(new Date(homily.datePublished), "MMM dd, yyyy")}
                         </span>
-                      )}
-                      {homily.videoLink && (
-                        <a
-                          href={homily.videoLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          onClick={(e) => e.stopPropagation()}
-                          className="bg-[#FF0000] text-white px-3 py-1 font-black text-xs uppercase tracking-widest border-2 border-black flex items-center gap-1.5 hover:scale-105 transition-transform"
-                          title="Watch on YouTube"
-                        >
-                          <ExternalLink size={14} />
-                          Video
-                        </a>
                       )}
                     </div>
-                    {homily.datePublished && (
-                      <span className="font-bold text-sm uppercase tracking-tight text-muted-foreground">
-                        Published at {format(new Date(homily.datePublished), "MMM dd, yyyy")}
-                      </span>
-                    )}
-                  </div>
-                  <CardTitle className="group-hover:text-primary transition-colors text-3xl font-display font-black leading-tight">
-                    {homily.biblePassage 
-                      ? homily.title.replace(new RegExp(`\\s*${homily.biblePassage.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')}\\s*`, 'gi'), '').trim()
-                      : homily.title}
-                  </CardTitle>
-                </CardHeader>
-              </Card>
-            </Link>
+                    <CardTitle className="group-hover:text-primary transition-colors text-3xl font-display font-black leading-tight pr-16">
+                      {homily.biblePassage 
+                        ? homily.title.replace(new RegExp(`\\s*${homily.biblePassage.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')}\\s*`, 'gi'), '').trim()
+                        : homily.title}
+                    </CardTitle>
+                  </CardHeader>
+                </Card>
+              </Link>
+              
+              {homily.videoLink && (
+                <a
+                  href={homily.videoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute bottom-6 right-6 bg-[#FF0000] text-white px-3 py-1 font-black text-xs uppercase tracking-widest border-2 border-black flex items-center gap-1.5 hover:scale-110 transition-transform shadow-brutal-sm z-10"
+                  title="Watch on YouTube"
+                >
+                  <ExternalLink size={14} />
+                  Video
+                </a>
+              )}
+            </div>
           ))
         )}
       </section>
